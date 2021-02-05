@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Waw-gc-4cF">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Yak List Table View Controller-->
+        <scene sceneID="Dh6-lF-Wuk">
+            <objects>
+                <tableViewController id="UvW-iy-mCj" customClass="YakListTableViewController" customModule="YikyYak" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="140" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="JKp-Xi-CF6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="yakCell" id="syz-NG-oVd" customClass="YakTableViewCell" customModule="YikyYak" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="140"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="syz-NG-oVd" id="5hP-1X-PHS">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" (Yak) " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="hqO-Sc-XPD">
+                                            <rect key="frame" x="20" y="30" width="294.5" height="80"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="PS2-oo-cDB">
+                                            <rect key="frame" x="334.5" y="18" width="54.5" height="104.5"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Esr-sQ-azK">
+                                                    <rect key="frame" x="0.0" y="0.0" width="54.5" height="29"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="54.5" id="qO3-Du-9h3"/>
+                                                    </constraints>
+                                                    <color key="tintColor" systemColor="labelColor"/>
+                                                    <state key="normal" image="chevron.up" catalog="system">
+                                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="35"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="upVoteButtonTapped:" destination="syz-NG-oVd" eventType="touchUpInside" id="Gvd-u7-wrc"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0Q-vW-efi">
+                                                    <rect key="frame" x="0.0" y="41" width="54.5" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqL-6L-8Iq">
+                                                    <rect key="frame" x="0.0" y="77" width="54.5" height="27.5"/>
+                                                    <color key="tintColor" systemColor="labelColor"/>
+                                                    <state key="normal" image="chevron.down" catalog="system">
+                                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="35"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="downVoteButtonTapped:" destination="syz-NG-oVd" eventType="touchUpInside" id="zPm-DZ-VvI"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="hqO-Sc-XPD" firstAttribute="leading" secondItem="5hP-1X-PHS" secondAttribute="leading" constant="20" id="4TF-3l-5Oe"/>
+                                        <constraint firstAttribute="bottom" secondItem="hqO-Sc-XPD" secondAttribute="bottom" constant="30" id="8j0-tr-w03"/>
+                                        <constraint firstItem="PS2-oo-cDB" firstAttribute="centerY" secondItem="5hP-1X-PHS" secondAttribute="centerY" id="Vgo-Wf-d1j"/>
+                                        <constraint firstAttribute="trailing" secondItem="PS2-oo-cDB" secondAttribute="trailing" constant="25" id="ctb-sG-PH0"/>
+                                        <constraint firstItem="PS2-oo-cDB" firstAttribute="leading" secondItem="hqO-Sc-XPD" secondAttribute="trailing" constant="20" id="eCI-Q7-clg"/>
+                                        <constraint firstItem="hqO-Sc-XPD" firstAttribute="top" secondItem="5hP-1X-PHS" secondAttribute="top" constant="30" id="k5T-oG-E8z"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="yakLabel" destination="hqO-Sc-XPD" id="7MM-CI-E3V"/>
+                                    <outlet property="yakScoreLabel" destination="J0Q-vW-efi" id="Qld-x7-wFU"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="UvW-iy-mCj" id="tSv-f3-OdS"/>
+                            <outlet property="delegate" destination="UvW-iy-mCj" id="QTC-fL-lmm"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="P5H-Wn-pmj">
+                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="lcI-s7-0v4">
+                            <connections>
+                                <action selector="refreshButtonTapped:" destination="UvW-iy-mCj" id="OmJ-ij-zBN"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="tqz-Ii-hOm">
+                            <connections>
+                                <action selector="composeButtonTapped:" destination="UvW-iy-mCj" id="Jtf-Vm-tH3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zce-82-Jrd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900.00000000000011" y="12.723214285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="d8u-ar-PIW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Waw-gc-4cF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eYb-7y-Nwm">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UvW-iy-mCj" kind="relationship" relationship="rootViewController" id="mln-s6-GAu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iR3-n9-lH5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10.144927536231885" y="12.723214285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.down" catalog="system" width="128" height="72"/>
+        <image name="chevron.up" catalog="system" width="128" height="72"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

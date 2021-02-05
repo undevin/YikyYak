@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		033D896125CCCC4C00BAA23D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033D896025CCCC4C00BAA23D /* AppDelegate.swift */; };
+		033D896325CCCC4C00BAA23D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033D896225CCCC4C00BAA23D /* SceneDelegate.swift */; };
+		033D896825CCCC4C00BAA23D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 033D896625CCCC4C00BAA23D /* Main.storyboard */; };
+		033D896A25CCCC5800BAA23D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 033D896925CCCC5800BAA23D /* Assets.xcassets */; };
+		033D896D25CCCC5800BAA23D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 033D896B25CCCC5800BAA23D /* LaunchScreen.storyboard */; };
+		033D898525CCCD5A00BAA23D /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033D898425CCCD5A00BAA23D /* CloudKit.framework */; };
+		033D898725CCCE5C00BAA23D /* Yak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033D898625CCCE5C00BAA23D /* Yak.swift */; };
+		033D898B25CCDB7C00BAA23D /* YakController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033D898A25CCDB7C00BAA23D /* YakController.swift */; };
+		033D898E25CCDCDD00BAA23D /* YakError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033D898D25CCDCDD00BAA23D /* YakError.swift */; };
+		033D899425CCF45F00BAA23D /* YakListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033D899325CCF45F00BAA23D /* YakListTableViewController.swift */; };
+		033D899725CCF53000BAA23D /* YakTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033D899625CCF53000BAA23D /* YakTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		033D895D25CCCC4C00BAA23D /* YikyYak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YikyYak.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		033D896025CCCC4C00BAA23D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		033D896225CCCC4C00BAA23D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		033D896725CCCC4C00BAA23D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		033D896925CCCC5800BAA23D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		033D896C25CCCC5800BAA23D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		033D896E25CCCC5800BAA23D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		033D898225CCCD5700BAA23D /* YikyYak.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YikyYak.entitlements; sourceTree = "<group>"; };
+		033D898425CCCD5A00BAA23D /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		033D898625CCCE5C00BAA23D /* Yak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yak.swift; sourceTree = "<group>"; };
+		033D898A25CCDB7C00BAA23D /* YakController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YakController.swift; sourceTree = "<group>"; };
+		033D898D25CCDCDD00BAA23D /* YakError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YakError.swift; sourceTree = "<group>"; };
+		033D899325CCF45F00BAA23D /* YakListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YakListTableViewController.swift; sourceTree = "<group>"; };
+		033D899625CCF53000BAA23D /* YakTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YakTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		033D895A25CCCC4C00BAA23D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				033D898525CCCD5A00BAA23D /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		033D895425CCCC4C00BAA23D = {
+			isa = PBXGroup;
+			children = (
+				033D895F25CCCC4C00BAA23D /* YikyYak */,
+				033D895E25CCCC4C00BAA23D /* Products */,
+				033D898325CCCD5A00BAA23D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		033D895E25CCCC4C00BAA23D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				033D895D25CCCC4C00BAA23D /* YikyYak.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		033D895F25CCCC4C00BAA23D /* YikyYak */ = {
+			isa = PBXGroup;
+			children = (
+				033D898225CCCD5700BAA23D /* YikyYak.entitlements */,
+				033D898125CCCCF100BAA23D /* Helpers */,
+				033D897A25CCCC8100BAA23D /* Model */,
+				033D897C25CCCC8600BAA23D /* Controllers */,
+				033D897725CCCC6C00BAA23D /* Views */,
+				033D897525CCCC6300BAA23D /* Resources */,
+			);
+			path = YikyYak;
+			sourceTree = "<group>";
+		};
+		033D897525CCCC6300BAA23D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				033D896025CCCC4C00BAA23D /* AppDelegate.swift */,
+				033D896225CCCC4C00BAA23D /* SceneDelegate.swift */,
+				033D896925CCCC5800BAA23D /* Assets.xcassets */,
+				033D896E25CCCC5800BAA23D /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		033D897725CCCC6C00BAA23D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				033D899125CCF2F100BAA23D /* Custom Cell */,
+				033D897925CCCC7100BAA23D /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		033D897925CCCC7100BAA23D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				033D896625CCCC4C00BAA23D /* Main.storyboard */,
+				033D896B25CCCC5800BAA23D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		033D897A25CCCC8100BAA23D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				033D898625CCCE5C00BAA23D /* Yak.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		033D897C25CCCC8600BAA23D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				033D897E25CCCCA600BAA23D /* Model Controller */,
+				033D897F25CCCCAE00BAA23D /* View Controller */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		033D897E25CCCCA600BAA23D /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				033D898A25CCDB7C00BAA23D /* YakController.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		033D897F25CCCCAE00BAA23D /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				033D899325CCF45F00BAA23D /* YakListTableViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		033D898125CCCCF100BAA23D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				033D898D25CCDCDD00BAA23D /* YakError.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		033D898325CCCD5A00BAA23D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				033D898425CCCD5A00BAA23D /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		033D899125CCF2F100BAA23D /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				033D899625CCF53000BAA23D /* YakTableViewCell.swift */,
+			);
+			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		033D895C25CCCC4C00BAA23D /* YikyYak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 033D897125CCCC5800BAA23D /* Build configuration list for PBXNativeTarget "YikyYak" */;
+			buildPhases = (
+				033D895925CCCC4C00BAA23D /* Sources */,
+				033D895A25CCCC4C00BAA23D /* Frameworks */,
+				033D895B25CCCC4C00BAA23D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YikyYak;
+			productName = YikyYak;
+			productReference = 033D895D25CCCC4C00BAA23D /* YikyYak.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		033D895525CCCC4C00BAA23D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					033D895C25CCCC4C00BAA23D = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 033D895825CCCC4C00BAA23D /* Build configuration list for PBXProject "YikyYak" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 033D895425CCCC4C00BAA23D;
+			productRefGroup = 033D895E25CCCC4C00BAA23D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				033D895C25CCCC4C00BAA23D /* YikyYak */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		033D895B25CCCC4C00BAA23D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				033D896D25CCCC5800BAA23D /* LaunchScreen.storyboard in Resources */,
+				033D896A25CCCC5800BAA23D /* Assets.xcassets in Resources */,
+				033D896825CCCC4C00BAA23D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		033D895925CCCC4C00BAA23D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				033D896125CCCC4C00BAA23D /* AppDelegate.swift in Sources */,
+				033D898725CCCE5C00BAA23D /* Yak.swift in Sources */,
+				033D896325CCCC4C00BAA23D /* SceneDelegate.swift in Sources */,
+				033D898B25CCDB7C00BAA23D /* YakController.swift in Sources */,
+				033D899725CCF53000BAA23D /* YakTableViewCell.swift in Sources */,
+				033D899425CCF45F00BAA23D /* YakListTableViewController.swift in Sources */,
+				033D898E25CCDCDD00BAA23D /* YakError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		033D896625CCCC4C00BAA23D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				033D896725CCCC4C00BAA23D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		033D896B25CCCC5800BAA23D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				033D896C25CCCC5800BAA23D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		033D896F25CCCC5800BAA23D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		033D897025CCCC5800BAA23D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		033D897225CCCC5800BAA23D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = YikyYak/YikyYak.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9J63HYQ843;
+				INFOPLIST_FILE = YikyYak/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.devinflora.YikyYak;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		033D897325CCCC5800BAA23D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = YikyYak/YikyYak.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9J63HYQ843;
+				INFOPLIST_FILE = YikyYak/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.devinflora.YikyYak;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		033D895825CCCC4C00BAA23D /* Build configuration list for PBXProject "YikyYak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				033D896F25CCCC5800BAA23D /* Debug */,
+				033D897025CCCC5800BAA23D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		033D897125CCCC5800BAA23D /* Build configuration list for PBXNativeTarget "YikyYak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				033D897225CCCC5800BAA23D /* Debug */,
+				033D897325CCCC5800BAA23D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 033D895525CCCC4C00BAA23D /* Project object */;
+}
